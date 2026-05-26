@@ -45,6 +45,11 @@ nlp.zip
 papers/
 Application Project Proposal.pdf
 
+# --- Agent-directed docs (not for repo) ---
+AGENTS.md
+.claude/
+CLAUDE.md
+
 # --- Personal docs / drafts not for repo ---
 mt_progress_report.docx
 progress_report.docx

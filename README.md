@@ -59,7 +59,6 @@ evaluate_recall.py    4-condition retrieval ablation, writes eval_results.json
 eval_results.json     ablation results reported in the paper
 ui/                   Vite + React + TS + Tailwind frontend
 sys_paper/            final paper PDF
-AGENTS.md             deep-dive repo guide for AI agents / new contributors
 paper_references.md   citation map for the system paper
 ```
 
