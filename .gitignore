@@ -1,0 +1,62 @@
+# --- Secrets ---
+.env
+
+# --- macOS / editor ---
+.DS_Store
+.idea/
+.vscode/
+~$*
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# --- Node / Vite ---
+ui/node_modules/
+ui/dist/
+ui/.vite/
+ui/*.log
+
+# --- Generated data ---
+# WoW dataset, derived corpus, proposition cache, dense index.
+# These are rebuilt from scratch by build_corpus.py + dense_retriever.build().
+data/
+
+# --- Paper build artefacts ---
+sys_paper/*.aux
+sys_paper/*.log
+sys_paper/*.out
+sys_paper/*.bbl
+sys_paper/*.blg
+sys_paper/*.toc
+sys_paper/*.synctex.gz
+sys_paper/*.tex.bak
+
+# --- Local snapshots / backup mirrors (not part of the live repo) ---
+nlp/
+nlp.zip
+
+# --- Original assignment / reference papers (not redistributed) ---
+papers/
+Application Project Proposal.pdf
+
+# --- Personal docs / drafts not for repo ---
+mt_progress_report.docx
+progress_report.docx
+progress_report.pdf
+build_progress_report.py
+
+# --- Screenshots (referenced from paper, not redistributed as files) ---
+screenshots/
+sys_paper/screenshots/
+
+# --- Paper sources (only the compiled PDF is in the repo) ---
+sys_paper/*.tex
+sys_paper/*.bib
+sys_paper/*.sty
+sys_paper/*.bst

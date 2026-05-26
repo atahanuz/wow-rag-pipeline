@@ -1,0 +1,773 @@
+{
+  "config": {
+    "dense_pool": 10,
+    "ks": [
+      1,
+      3,
+      5
+    ],
+    "splits": [
+      "data/test_random_split.json",
+      "data/valid_random_split.json"
+    ]
+  },
+  "n_pairs": 21,
+  "elapsed_seconds": 63.4,
+  "rows": [
+    {
+      "condition": "paragraph",
+      "R@1": 0.47619047619047616,
+      "R@3": 0.7619047619047619,
+      "R@5": 0.7619047619047619,
+      "hits@1": 10,
+      "hits@3": 16,
+      "hits@5": 16
+    },
+    {
+      "condition": "paragraph+rerank",
+      "R@1": 0.5238095238095238,
+      "R@3": 0.7619047619047619,
+      "R@5": 0.8571428571428571,
+      "hits@1": 11,
+      "hits@3": 16,
+      "hits@5": 18
+    },
+    {
+      "condition": "proposition",
+      "R@1": 0.6190476190476191,
+      "R@3": 0.8095238095238095,
+      "R@5": 0.9047619047619048,
+      "hits@1": 13,
+      "hits@3": 17,
+      "hits@5": 19
+    },
+    {
+      "condition": "proposition+rerank",
+      "R@1": 0.5238095238095238,
+      "R@3": 0.8095238095238095,
+      "R@5": 0.8571428571428571,
+      "hits@1": 11,
+      "hits@3": 17,
+      "hits@5": 18
+    }
+  ],
+  "per_query": [
+    {
+      "query": "Amazing how time flies! Back then I believe it was considered a good box office. I remember there was some controversy about hidden scenes that animators put in.",
+      "rewrite": "Which past animated film with strong box office success faced controversy over hidden scenes inserted by its animators?",
+      "gold": "List of films considered the worst",
+      "top5": {
+        "paragraph": [
+          "List of films considered the worst",
+          "Legal disputes over the Harry Potter series",
+          "Religious debates over the Harry Potter series",
+          "Science fiction film",
+          "Politics of Harry Potter"
+        ],
+        "paragraph+rerank": [
+          "List of films considered the worst",
+          "Religious debates over the Harry Potter series",
+          "Politics of Harry Potter",
+          "Harry Potter fandom",
+          "Legal disputes over the Harry Potter series"
+        ],
+        "proposition": [
+          "List of films considered the worst",
+          "Science fiction film",
+          "U.S. television science fiction",
+          "Religious debates over the Harry Potter series",
+          "Legal disputes over the Harry Potter series"
+        ],
+        "proposition+rerank": [
+          "List of films considered the worst",
+          "Religious debates over the Harry Potter series",
+          "Legal disputes over the Harry Potter series",
+          "Science fiction film",
+          "U.S. television science fiction"
+        ]
+      }
+    },
+    {
+      "query": "Are there any particular examples of Sci-Fi that really stand out?",
+      "rewrite": "standout examples of science fiction",
+      "gold": "Science fiction film",
+      "top5": {
+        "paragraph": [
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "History of science fiction",
+          "U.S. television science fiction"
+        ],
+        "paragraph+rerank": [
+          "U.S. television science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "Science fiction",
+          "History of science fiction"
+        ],
+        "proposition": [
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction",
+          "History of science fiction"
+        ],
+        "proposition+rerank": [
+          "Science fiction",
+          "Science fiction film",
+          "Science fiction",
+          "History of science fiction"
+        ]
+      }
+    },
+    {
+      "query": "Do you like science fiction?",
+      "rewrite": "Does the assistant like science fiction?",
+      "gold": "Science fiction",
+      "top5": {
+        "paragraph": [
+          "Science fiction",
+          "Science fiction",
+          "History of science fiction",
+          "Science fiction film",
+          "LGBT themes in speculative fiction"
+        ],
+        "paragraph+rerank": [
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "U.S. television science fiction",
+          "History of science fiction"
+        ],
+        "proposition": [
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "History of science fiction"
+        ],
+        "proposition+rerank": [
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "History of science fiction"
+        ]
+      }
+    },
+    {
+      "query": "Fantasy is my reading vice, haha. But Science Fiction is pretty good as well!",
+      "rewrite": "fantasy and science fiction book recommendations",
+      "gold": "Science fiction",
+      "top5": {
+        "paragraph": [
+          "LGBT themes in speculative fiction",
+          "Science fiction",
+          "Science fiction",
+          "History of science fiction",
+          "History of US science fiction and fantasy magazines to 1950"
+        ],
+        "paragraph+rerank": [
+          "Science fiction",
+          "Science fiction",
+          "History of US science fiction and fantasy magazines to 1950",
+          "LGBT themes in speculative fiction",
+          "History of science fiction"
+        ],
+        "proposition": [
+          "Science fiction",
+          "Science fiction",
+          "History of science fiction",
+          "LGBT themes in speculative fiction",
+          "Science fiction film"
+        ],
+        "proposition+rerank": [
+          "Science fiction",
+          "Science fiction",
+          "LGBT themes in speculative fiction",
+          "History of science fiction",
+          "Science fiction film"
+        ]
+      }
+    },
+    {
+      "query": "Hah, E.T.? ",
+      "rewrite": "details about the film E.T. the Extra-Terrestrial",
+      "gold": "Science fiction film",
+      "top5": {
+        "paragraph": [
+          "Science fiction film",
+          "List of films considered the worst",
+          "Hyperspace (science fiction)",
+          "List of starships in Stargate",
+          "U.S. television science fiction"
+        ],
+        "paragraph+rerank": [
+          "Science fiction film",
+          "Science fiction",
+          "U.S. television science fiction",
+          "Harry Potter (film series)",
+          "Sci-Fi on the Rock"
+        ],
+        "proposition": [
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction",
+          "U.S. television science fiction",
+          "Sci-Fi on the Rock"
+        ],
+        "proposition+rerank": [
+          "Science fiction film",
+          "Science fiction",
+          "U.S. television science fiction",
+          "Sci-Fi on the Rock",
+          "Science fiction"
+        ]
+      }
+    },
+    {
+      "query": "I also am a big fan of those kinds of horror films, with fantasy elements interwoven. I am highly impressed with how the incorporate the computer industry for more outstanding visuals and effects, like the green screen, and similar",
+      "rewrite": "horror movies with fantasy elements that use computer industry technology such as green screen for advanced visual effects",
+      "gold": "Science fiction",
+      "top5": {
+        "paragraph": [
+          "Science fiction film",
+          "Science fiction",
+          "LGBT themes in speculative fiction",
+          "Harry Potter (film series)",
+          "Science fiction"
+        ],
+        "paragraph+rerank": [
+          "Harry Potter (film series)",
+          "Science fiction film",
+          "List of films considered the worst",
+          "History of US science fiction and fantasy magazines to 1950",
+          "Science fiction"
+        ],
+        "proposition": [
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction",
+          "Harry Potter (film series)"
+        ],
+        "proposition+rerank": [
+          "Harry Potter (film series)",
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction"
+        ]
+      }
+    },
+    {
+      "query": "I also enjoy fiction. What is your favorite children's fiction novel? I would say Harry Potter is mine.",
+      "rewrite": "What is the assistant's favorite children's fiction novel?",
+      "gold": "Harry Potter",
+      "top5": {
+        "paragraph": [
+          "Religious debates over the Harry Potter series",
+          "Politics of Harry Potter",
+          "Harry Potter",
+          "Harry Potter fandom",
+          "Time travel in fiction"
+        ],
+        "paragraph+rerank": [
+          "Harry Potter",
+          "Religious debates over the Harry Potter series",
+          "Politics of Harry Potter",
+          "Harry Potter fandom",
+          "Legal disputes over the Harry Potter series"
+        ],
+        "proposition": [
+          "Harry Potter",
+          "Religious debates over the Harry Potter series",
+          "Harry Potter fandom",
+          "Time travel",
+          "Time travel in fiction"
+        ],
+        "proposition+rerank": [
+          "Harry Potter",
+          "Religious debates over the Harry Potter series",
+          "Politics of Harry Potter",
+          "Harry Potter fandom",
+          "Order of the Phoenix (fictional organisation)"
+        ]
+      }
+    },
+    {
+      "query": "I didn't think it was very interesting to read, but movies were okay.",
+      "rewrite": "reading not interesting but movies okay",
+      "gold": "List of films considered the worst",
+      "top5": {
+        "paragraph": [
+          "List of films considered the worst",
+          "Religious debates over the Harry Potter series",
+          "Legal disputes over the Harry Potter series",
+          "Politics of Harry Potter",
+          "Harry Potter fandom"
+        ],
+        "paragraph+rerank": [
+          "Harry Potter fandom",
+          "Science fiction film",
+          "List of films considered the worst",
+          "Religious debates over the Harry Potter series",
+          "LGBT themes in speculative fiction"
+        ],
+        "proposition": [
+          "Science fiction film",
+          "Science fiction",
+          "Religious debates over the Harry Potter series",
+          "List of films considered the worst",
+          "Science fiction"
+        ],
+        "proposition+rerank": [
+          "Science fiction",
+          "Harry Potter fandom",
+          "Science fiction film",
+          "List of films considered the worst",
+          "Science fiction"
+        ]
+      }
+    },
+    {
+      "query": "I do. But a lot of what I read does have supernatural in it as well although in small amounts",
+      "rewrite": "books with occasional small supernatural elements but primarily realistic content",
+      "gold": "History of science fiction",
+      "top5": {
+        "paragraph": [
+          "Science fiction",
+          "Science fiction",
+          "LGBT themes in speculative fiction",
+          "Religious debates over the Harry Potter series",
+          "Alternate history"
+        ],
+        "paragraph+rerank": [
+          "Science fiction",
+          "Religious debates over the Harry Potter series",
+          "Science fiction",
+          "Science fiction film",
+          "LGBT themes in speculative fiction"
+        ],
+        "proposition": [
+          "Science fiction",
+          "Science fiction",
+          "Time travel in fiction",
+          "History of science fiction",
+          "Religious debates over the Harry Potter series"
+        ],
+        "proposition+rerank": [
+          "Science fiction",
+          "Religious debates over the Harry Potter series",
+          "Science fiction",
+          "Science fiction film",
+          "LGBT themes in speculative fiction"
+        ]
+      }
+    },
+    {
+      "query": "I like science fiction and alien movies and shows. Do those interest you?",
+      "rewrite": "Do you have an interest in science fiction and alien movies and shows?",
+      "gold": "Science fiction film",
+      "top5": {
+        "paragraph": [
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction",
+          "U.S. television science fiction",
+          "History of science fiction"
+        ],
+        "paragraph+rerank": [
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction",
+          "U.S. television science fiction",
+          "Sci-Fi on the Rock"
+        ],
+        "proposition": [
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "U.S. television science fiction"
+        ],
+        "proposition+rerank": [
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction",
+          "U.S. television science fiction"
+        ]
+      }
+    },
+    {
+      "query": "I love stories like that when they put a crazy twist on past events, It also makes for a good movie idea. ",
+      "rewrite": "stories that add a crazy twist to historical events and could inspire a movie",
+      "gold": "Alternate history",
+      "top5": {
+        "paragraph": [
+          "Alternate history",
+          "Science fiction film",
+          "Time travel in fiction",
+          "Science fiction",
+          "Science fiction"
+        ],
+        "paragraph+rerank": [
+          "Alternate history",
+          "Time travel in fiction",
+          "Science fiction",
+          "List of films considered the worst",
+          "Science fiction"
+        ],
+        "proposition": [
+          "Alternate history",
+          "Time travel in fiction",
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction"
+        ],
+        "proposition+rerank": [
+          "Alternate history",
+          "Time travel in fiction",
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film"
+        ]
+      }
+    },
+    {
+      "query": "I'm going to look into that right away. Is there any basic topics I need to study?",
+      "rewrite": "What basic topics should I study for the subject I am about to research?",
+      "gold": "Oddworld Inhabitants",
+      "top5": {
+        "paragraph": [
+          "History of science fiction",
+          "Hyperspace (science fiction)",
+          "Politics of Harry Potter",
+          "Parallel universes in fiction",
+          "LGBT themes in speculative fiction"
+        ],
+        "paragraph+rerank": [
+          "Science fiction",
+          "Politics of Harry Potter",
+          "History of science fiction",
+          "LGBT themes in speculative fiction",
+          "Science fiction film"
+        ],
+        "proposition": [
+          "Science fiction",
+          "Politics of Harry Potter",
+          "Hyperspace (science fiction)",
+          "History of science fiction",
+          "Science fiction film"
+        ],
+        "proposition+rerank": [
+          "Science fiction",
+          "Science fiction",
+          "Politics of Harry Potter",
+          "History of science fiction",
+          "The Spirit of the Age"
+        ]
+      }
+    },
+    {
+      "query": "Iron Man is science fiction.  There are no silly questions.  Do you know when science fiction books started to become popular?",
+      "rewrite": "When did science fiction books first become popular?",
+      "gold": "Science fiction",
+      "top5": {
+        "paragraph": [
+          "History of science fiction",
+          "Science fiction",
+          "Science fiction",
+          "History of US science fiction and fantasy magazines to 1950",
+          "U.S. television science fiction"
+        ],
+        "paragraph+rerank": [
+          "History of science fiction",
+          "History of US science fiction and fantasy magazines to 1950",
+          "U.S. television science fiction",
+          "Science fiction",
+          "Science fiction"
+        ],
+        "proposition": [
+          "History of science fiction",
+          "Science fiction",
+          "Science fiction",
+          "History of US science fiction and fantasy magazines to 1950",
+          "Time travel"
+        ],
+        "proposition+rerank": [
+          "History of science fiction",
+          "History of US science fiction and fantasy magazines to 1950",
+          "Science fiction",
+          "Harry Potter",
+          "Science fiction"
+        ]
+      }
+    },
+    {
+      "query": "ME too!! Its so interesting. Any movies?",
+      "rewrite": "Recommend interesting movies",
+      "gold": "Science fiction film",
+      "top5": {
+        "paragraph": [
+          "Science fiction film",
+          "List of films considered the worst",
+          "Harry Potter (film series)",
+          "Science fiction",
+          "Music of the Marvel Cinematic Universe"
+        ],
+        "paragraph+rerank": [
+          "Harry Potter (film series)",
+          "List of films considered the worst",
+          "Science fiction film",
+          "Science fiction",
+          "Music of the Marvel Cinematic Universe"
+        ],
+        "proposition": [
+          "Science fiction film",
+          "Science fiction",
+          "Harry Potter (film series)",
+          "List of films considered the worst",
+          "Science fiction"
+        ],
+        "proposition+rerank": [
+          "Harry Potter (film series)",
+          "List of films considered the worst",
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction"
+        ]
+      }
+    },
+    {
+      "query": "Science fiction is great, I really like Isaac Asimov.",
+      "rewrite": "Science fiction is great, the user really likes Isaac Asimov",
+      "gold": "Isaac Asimov",
+      "top5": {
+        "paragraph": [
+          "Isaac Asimov",
+          "Science fiction",
+          "Science fiction",
+          "History of science fiction",
+          "Science fiction film"
+        ],
+        "paragraph+rerank": [
+          "Isaac Asimov",
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "U.S. television science fiction"
+        ],
+        "proposition": [
+          "Isaac Asimov",
+          "Science fiction",
+          "Science fiction",
+          "History of science fiction"
+        ],
+        "proposition+rerank": [
+          "Isaac Asimov",
+          "Science fiction",
+          "Science fiction",
+          "History of science fiction"
+        ]
+      }
+    },
+    {
+      "query": "There is many Star Wars films!  Do you like any science fiction?",
+      "rewrite": "popular science fiction movies similar to Star Wars",
+      "gold": "Science fiction",
+      "top5": {
+        "paragraph": [
+          "Science fiction film",
+          "Science fiction",
+          "U.S. television science fiction",
+          "List of starships in Stargate",
+          "Science fiction"
+        ],
+        "paragraph+rerank": [
+          "U.S. television science fiction",
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction",
+          "List of starships in Stargate"
+        ],
+        "proposition": [
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction"
+        ],
+        "proposition+rerank": [
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction"
+        ]
+      }
+    },
+    {
+      "query": "Those are all science fiction.  Good choices!  So you do like science fiction after all!",
+      "rewrite": "recommendations for science fiction books",
+      "gold": "Science fiction",
+      "top5": {
+        "paragraph": [
+          "Science fiction",
+          "Science fiction",
+          "History of science fiction",
+          "Science fiction film",
+          "LGBT themes in speculative fiction"
+        ],
+        "paragraph+rerank": [
+          "Science fiction",
+          "Science fiction",
+          "LGBT themes in speculative fiction",
+          "Science fiction film",
+          "History of US science fiction and fantasy magazines to 1950"
+        ],
+        "proposition": [
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "History of science fiction"
+        ],
+        "proposition+rerank": [
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "History of science fiction"
+        ]
+      }
+    },
+    {
+      "query": "Well, it still has some basis in actual science I assume. It is 'fictional'...but everything has a basis in truth in my opinion",
+      "rewrite": "Scientific basis for fictional concepts",
+      "gold": "Science fiction",
+      "top5": {
+        "paragraph": [
+          "Science fiction",
+          "Science fiction film",
+          "Science fiction",
+          "History of science fiction",
+          "Hyperspace (science fiction)"
+        ],
+        "paragraph+rerank": [
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "Time travel",
+          "Hyperspace (science fiction)"
+        ],
+        "proposition": [
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "Alternate history"
+        ],
+        "proposition+rerank": [
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "Alternate history"
+        ]
+      }
+    },
+    {
+      "query": "What kind of fiction works do you enjoy? Any particular author?",
+      "rewrite": "favorite fiction genres and preferred authors",
+      "gold": "Science fiction",
+      "top5": {
+        "paragraph": [
+          "LGBT themes in speculative fiction",
+          "History of science fiction",
+          "Harry Potter fandom",
+          "Religious debates over the Harry Potter series",
+          "Alternate history"
+        ],
+        "paragraph+rerank": [
+          "Science fiction",
+          "Science fiction",
+          "History of US science fiction and fantasy magazines to 1950",
+          "LGBT themes in speculative fiction",
+          "Alternate history"
+        ],
+        "proposition": [
+          "Science fiction",
+          "Science fiction",
+          "Harry Potter fandom",
+          "History of science fiction",
+          "LGBT themes in speculative fiction"
+        ],
+        "proposition+rerank": [
+          "Science fiction",
+          "Science fiction",
+          "LGBT themes in speculative fiction",
+          "Isaac Asimov",
+          "Alternate history"
+        ]
+      }
+    },
+    {
+      "query": "Yes it makes you think if it can actually happen, like when they clone people.",
+      "rewrite": "Is it possible to clone humans in reality?",
+      "gold": "Science fiction",
+      "top5": {
+        "paragraph": [
+          "Parallel universes in fiction",
+          "List of starships in Stargate",
+          "Hyperspace (science fiction)",
+          "History of science fiction",
+          "Science fiction film"
+        ],
+        "paragraph+rerank": [
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction",
+          "Parallel universes in fiction",
+          "History of science fiction"
+        ],
+        "proposition": [
+          "Science fiction",
+          "Science fiction",
+          "Science fiction film",
+          "Hyperspace (science fiction)",
+          "Time travel"
+        ],
+        "proposition+rerank": [
+          "Science fiction film",
+          "Science fiction",
+          "Science fiction",
+          "Parallel universes in fiction",
+          "History of science fiction"
+        ]
+      }
+    },
+    {
+      "query": "o really? how old is he?",
+      "rewrite": "age of the person being discussed",
+      "gold": "Characters of Casualty",
+      "top5": {
+        "paragraph": [
+          "The Spirit of the Age",
+          "Politics of Harry Potter",
+          "History of science fiction",
+          "Religious debates over the Harry Potter series",
+          "Adolescent sexuality in the United States"
+        ],
+        "paragraph+rerank": [
+          "The Spirit of the Age",
+          "Adolescent sexuality in the United States",
+          "Stigma management",
+          "List of supporting Harry Potter characters",
+          "Politics of Harry Potter"
+        ],
+        "proposition": [
+          "The Spirit of the Age",
+          "Adolescent sexuality in the United States",
+          "Politics of Harry Potter",
+          "Harry Potter fandom",
+          "Order of the Phoenix (fictional organisation)"
+        ],
+        "proposition+rerank": [
+          "The Spirit of the Age",
+          "Isaac Asimov",
+          "Adolescent sexuality in the United States",
+          "Harry Potter",
+          "Politics of Harry Potter"
+        ]
+      }
+    }
+  ]
+}
